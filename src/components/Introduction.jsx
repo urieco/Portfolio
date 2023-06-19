@@ -11,7 +11,7 @@ function Introduction () {
         </div>
         <button 
           className="downloadCVBtn"
-          onClick={() => window.open('/src/documents/Resume - EN.pdf', '_blank')}
+          onClick={() => window.open('../documents/Resume - EN.pdf', '_blank')}
         >
           Download Resume
         </button>
