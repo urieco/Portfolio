@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
+import Resume from '../documents/Resume - EN.pdf'
+
 function Introduction () {
   console.log('Introduction')
   return (
@@ -11,7 +13,7 @@ function Introduction () {
         </div>
         <button 
           className="downloadCVBtn"
-          onClick={() => window.open('../documents/Resume - EN.pdf', '_blank')}
+          onClick={() => window.open(Resume, '_blank')}
         >
           Download Resume
         </button>
