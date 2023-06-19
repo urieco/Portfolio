@@ -1,0 +1,144 @@
+$color_1: #f97316;
+$color_2: #0f172a;
+$color_3: #22c55e;
+
+.App {
+  width: 100svw;
+  min-width: 500px;
+  margin: auto;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+.NavBar {
+  background-color: $color_2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.75em;
+
+  .logo {
+    letter-spacing: 0.2em;
+    cursor: pointer;
+
+    b {
+      color: $color_1;
+      font-size: 3rem;
+      position: absolute;
+      top: -0.15em;
+      left: 3.75em;
+    }
+  }
+
+  .navLinkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .NavLink {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      vertical-align: center;
+      margin: 0.5em;
+    }
+
+    .NavLink:hover {
+      color: $color_1;
+      transform: scale(1.1);
+    }
+
+    .NavLink.active {
+      text-decoration: underline;
+      text-underline-position: under;
+      color: $color_1;
+    }
+  }
+
+  .MediaLink {
+    display: flex;
+    justify-content: end;
+    padding-top: 0.4em;
+
+    .language {
+      font-weight: 700;
+      padding-top: 0.3em;
+    }
+
+    a {
+      margin-left: 0.75em;
+
+      img {
+        width: 30px;
+      }
+
+      img:hover {
+        color: $color_1;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 1em;
+    
+    .logo {
+      text-align: center;
+      position: relative;
+
+      b {
+        top: -54%;
+        left: 67%;
+      }
+    }
+
+    .MediaLink {
+      grid-row: 2;
+      justify-content: center;
+      gap: 2em;
+    }
+  }
+}
+
+.Introduction {
+  background-color: $color_2;
+  padding: 0.75em;
+
+  .aboutMe {
+    padding-left: 0.75em;
+    border-left: 0.25em solid #fff;
+
+    .greeting {
+      font-weight: 300;
+    }
+
+    h1 {
+      font-size: 3rem;
+      padding: 0.2em 0;
+      
+      .role {
+        color: $color_3;
+      }
+    }
+
+    .downloadCVBtn {
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 0.1em 0.5em;
+      border: none;
+      border-radius: 5%;
+      margin-top: 0.75em;
+      box-shadow: 0.1em 0.1em rgba(255, 255, 255, 0.4);
+    }
+
+    // .downloadCVBtn:active {
+    //   box-shadow: none;
+    // }
+  }
+}
+
+// * {
+//   outline: 1px solid red;
+// }
