@@ -1,20 +1,24 @@
-import "./App.scss";
 import "./Content.scss"
-import { Contact } from "./components/Contact";
-import { Experience } from "./components/Experience";
-import { Introduction } from "./components/Introduction";
+import "./App.scss";
 import { NavBar } from "./components/NavBar";
-import { ProjectsDisplay } from "./components/ProjectsDisplay";
+import { LoadingScreen } from "./components/LoadingScreen";
+import { useEffect, useState } from "react";
+
 
 function App() {
+  const [ loading, setLoading ] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  }, [])
+
   return (
-    <div className="App">
-      <NavBar />
-      <Introduction />
-      <Experience />
-      <ProjectsDisplay />
-      <Contact />
-    </div>
+    <>
+      {loading ? <LoadingScreen /> : <div className="App"><NavBar /></div>}
+    </>
   );
 }
 

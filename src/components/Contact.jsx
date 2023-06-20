@@ -2,7 +2,7 @@ import { MediaLink } from "./MediaLink";
 
 function Contact() {
   return (
-    <div className="Contact">
+    <>
       <h1>Contact me</h1>
       <div className="note">
         Please get in touch if you think our work could be mutually beneficial!
@@ -18,7 +18,7 @@ function Contact() {
         Email: <span>huy.dodang27@gmail.com</span>
       </div>
       <MediaLink />
-    </div>
+    </>
   );
 }
 

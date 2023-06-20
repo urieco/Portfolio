@@ -39,43 +39,41 @@ function Experience() {
 
   return (
     <>
-      <div className="Experience">
-        <h1 className="workWith">I have worked with...</h1>
-        <div className="experienceBoard">
-          <div className="developmentStack">
-            <h3>Development Stack</h3>
-            {developmentStack.map((logo) => {
-              return <img src={logo} />;
-            })}
-          </div>
+      <h1 className="workWith">I have worked with...</h1>
+      <div className="experienceBoard">
+        <div className="developmentStack">
+          <h3>Development Stack</h3>
+          {developmentStack.map((logo) => {
+            return <img src={logo} />;
+          })}
+        </div>
 
-          <div className="devTools">
-            <h3>Development Tools</h3>
-            {devTools.map((logo) => {
-              return <img src={logo} />;
-            })}
-          </div>
+        <div className="devTools">
+          <h3>Development Tools</h3>
+          {devTools.map((logo) => {
+            return <img src={logo} />;
+          })}
+        </div>
 
-          <div className="mockUp">
-            <h3>Mockup Tools</h3>
-            {mockUp.map((logo) => {
-              return <img src={logo} />;
-            })}
-          </div>
+        <div className="mockUp">
+          <h3>Mockup Tools</h3>
+          {mockUp.map((logo) => {
+            return <img src={logo} />;
+          })}
+        </div>
 
-          <div className="officeTools">
-            <h3>Office Tools</h3>
-            {officeTools.map((logo) => {
-              return <img src={logo} />;
-            })}
-          </div>
+        <div className="officeTools">
+          <h3>Office Tools</h3>
+          {officeTools.map((logo) => {
+            return <img src={logo} />;
+          })}
+        </div>
 
-          <div className="OS">
-            <h3>Operating System</h3>
-            {OS.map((logo) => {
-              return <img src={logo} />;
-            })}
-          </div>
+        <div className="OS">
+          <h3>Operating System</h3>
+          {OS.map((logo) => {
+            return <img src={logo} />;
+          })}
         </div>
       </div>
     </>

@@ -193,10 +193,11 @@ h1.workWith {
 .Contact {
   font-size: 2vw;
   background: linear-gradient(
-    0deg,
-    rgba(34, 197, 94, 0.2) 0%,
-    rgba(249, 115, 22, 0.2) 100%
-  ) no-repeat;
+      0deg,
+      rgba(34, 197, 94, 0.2) 0%,
+      rgba(249, 115, 22, 0.2) 100%
+    )
+    no-repeat;
   padding: 4em 10svw 6em;
 
   div {
@@ -216,9 +217,8 @@ h1.workWith {
   .address,
   .phoneNumber,
   .email {
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 8fr;
-
   }
 
   .email {
@@ -227,7 +227,7 @@ h1.workWith {
 
   .MediaLink {
     margin-left: -0.5em;
-    
+
     img {
       background-color: transparent;
       width: 3svw;
@@ -245,6 +245,58 @@ h1.workWith {
   }
 
   @media screen and (min-width: $large_viewport) {
-    font-size: 1vw;    
+    font-size: 1vw;
+  }
+}
+
+// Mobile viewport
+@media only screen and (max-width: 480px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .NavBar {
+    transform: translateX(-30px);
+
+    b {
+      right: 2.3em;
+    }
+  }
+
+  .Introduction {
+    .description {
+      width: 85svw;
+    }
+
+    .downloadCVBtn {
+      transform: translateX(-50px);
+    }
+  }
+
+  .Experience {
+    transform: translateX(-30px);
+    .experienceBoard {
+      gap: 1em 2em;
+
+      img {
+        transform: scale(2);
+        margin: 0.75em 2em;
+      }
+
+      img:hover {
+        transform: scale(2.1);
+      }
+    }
+  }
+
+  .ProjectsDisplaySection {
+    h1 {
+      right: 2.2em;
+    }
+
+    .Project {
+      margin-left: -3em;
+    }
   }
 }

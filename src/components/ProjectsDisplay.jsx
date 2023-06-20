@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import { Project } from "./Project";
 import WeatherAppPicture from "../images/weather-app.png";
 import CVBuilderReactAppPicture from "../images/cv-builder-react.png";
@@ -7,9 +6,9 @@ import SignUpFormPicture from "../images/signup-form.png";
 import AdminDashboardPicture from "../images/admin-dashboard.png";
 import BasicCalculatorPicture from "../images/basic-calculator.png";
 
-function ProjectsDisplay({ ref }) {
+function ProjectsDisplay() {
   return (
-    <div className="ProjectsDisplaySection" ref={ref}>
+    <>
       <h1>MY PROJECTS</h1>
       <div className="ProjectsDisplay">
         <Project
@@ -51,12 +50,8 @@ function ProjectsDisplay({ ref }) {
           cols=' secondCols'
         />
       </div>
-    </div>
+    </>
   );
-}
-
-ProjectsDisplay.propTypes = {
-  ref: PropTypes.any
 }
 
 export { ProjectsDisplay };
