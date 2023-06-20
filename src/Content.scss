@@ -1,0 +1,250 @@
+$color_1: #f97316;
+$color_2: #0f172a;
+$color_3: #22c55e;
+$secondary_color_1: #ecfeff;
+$small_viewport: 600px;
+$large_viewport: 1500px;
+
+.Experience {
+  background: rgb(34, 197, 94);
+  background: linear-gradient(
+      0deg,
+      rgba(34, 197, 94, 0.2) 0%,
+      rgba(249, 115, 22, 0.2) 100%
+    )
+    no-repeat;
+  padding: 4em 0 6em;
+}
+
+h1.workWith {
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+  width: 80svw;
+  padding-bottom: 0.6em;
+  margin: auto;
+}
+
+.experienceBoard {
+  color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80svw;
+  margin: auto;
+
+  h3 {
+    font-weight: 500;
+    margin: 1em 0 1em 0;
+  }
+
+  img {
+    width: 5svw;
+    margin-right: 0.5em;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+
+  img:hover {
+    transform: scale(1.1);
+  }
+
+  div {
+    padding-bottom: 1em;
+  }
+
+  .developmentStack,
+  .devTools,
+  .officeTools,
+  .OS {
+    border-bottom: 0.1em solid $secondary_color_1;
+  }
+
+  .devTools {
+    grid-row: 2;
+  }
+
+  .mockUp {
+    grid-row: 3;
+  }
+
+  .officeTools,
+  .OS {
+    margin-right: 2em;
+  }
+
+  @media screen and (min-width: $large_viewport) {
+    gap: 1em;
+
+    h3 {
+      font-weight: 600;
+    }
+  }
+}
+
+.ProjectsDisplaySection {
+  background-color: $color_2;
+  position: relative;
+
+  h1 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10svw;
+    position: absolute;
+    right: -2.75em;
+    top: 2.88em;
+    transform: rotate(90deg);
+
+    @media screen and (max-width: $small_viewport) {
+      font-size: 11.5svw;
+      transform: none;
+      top: 0;
+      right: 1.35em;
+    }
+
+    @media screen and (min-width: $large_viewport) {
+      right: -2.75em;
+    }
+  }
+}
+
+.ProjectsDisplay {
+  color: #000;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35svw, 1fr));
+  grid-template-rows: 20px repeat(auto-fit, 1fr);
+  gap: 1em;
+  width: 80svw;
+  padding: 0 0 5em 0em;
+  margin: auto;
+
+  a.Project {
+    background-color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -15%;
+    border-radius: 2%;
+    box-shadow: -1em -1em 1em rgba(0, 0, 0, 0.2),
+      0.25em 0.5em rgba(255, 255, 255, 0.25);
+
+    img {
+      justify-items: center;
+    }
+
+    .projectTitle {
+      color: #000;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-weight: 700;
+      text-align: justify;
+      padding: 0.2em 0 0.5em 0.5em;
+      margin-top: 0.75em;
+      opacity: 0.5;
+    }
+  }
+
+  a.Project:hover {
+    box-shadow: 0.1em 0.1em 0.75em 0.02em rgba($color_1, 0.4);
+    animation: zoom 20s ease-in;
+
+    .projectTitle {
+      color: $color_1;
+      opacity: 1;
+    }
+  }
+
+  @keyframes zoom {
+    1% {
+      transform: scale(1.5);
+      z-index: 10;
+    }
+
+    100% {
+      transform: scale(1.5);
+      z-index: 10;
+    }
+  }
+
+  .Project.secondCols {
+    top: 15%;
+  }
+
+  @media screen and (max-width: $small_viewport) {
+    grid-template-columns: 75svw;
+    padding-top: 6em;
+
+    a.Project,
+    a.Project.secondCols {
+      top: 5%;
+    }
+
+    @keyframes zoom {
+      1% {
+        transform: scale(1.2);
+        z-index: 10;
+      }
+
+      100% {
+        transform: scale(1.2);
+        z-index: 10;
+      }
+    }
+  }
+}
+
+.Contact {
+  font-size: 2vw;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 197, 94, 0.2) 0%,
+    rgba(249, 115, 22, 0.2) 100%
+  ) no-repeat;
+  padding: 4em 10svw 6em;
+
+  div {
+    font-weight: 700;
+
+    span {
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  .note {
+    font-style: italic;
+    margin-top: 1em;
+  }
+
+  .address,
+  .phoneNumber,
+  .email {
+    display: grid; 
+    grid-template-columns: 1fr 8fr;
+
+  }
+
+  .email {
+    margin-bottom: 1em;
+  }
+
+  .MediaLink {
+    margin-left: -0.5em;
+    
+    img {
+      background-color: transparent;
+      width: 3svw;
+      margin-right: 1em;
+      filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
+      @media screen and (max-width: $small_viewport) {
+        width: 50px;
+      }
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @media screen and (min-width: $large_viewport) {
+    font-size: 1vw;    
+  }
+}

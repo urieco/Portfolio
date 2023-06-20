@@ -4,7 +4,6 @@ import FacebookLogo from '../assets/facebook.svg'
 function MediaLink () {
   return (
     <div className="MediaLink">
-    <div className="language">VI</div>
     <a href="https://github.com/urieco" target="_blank" rel="noreferrer">
       <img src={GithubLogo} alt="github-logo" />
     </a>

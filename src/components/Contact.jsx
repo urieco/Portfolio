@@ -1,0 +1,25 @@
+import { MediaLink } from "./MediaLink";
+
+function Contact() {
+  return (
+    <div className="Contact">
+      <h1>Contact me</h1>
+      <div className="note">
+        Please get in touch if you think our work could be mutually beneficial!
+      </div>
+      <br />
+      <div className="address">
+        Address: <span>411/7 Nguyễn Oanh, Quận Gò Vấp, TPHCM</span>
+      </div>
+      <div className="phoneNumber">
+        Phone: <span>0909 755 292</span>
+      </div>
+      <div className="email">
+        Email: <span>huy.dodang27@gmail.com</span>
+      </div>
+      <MediaLink />
+    </div>
+  );
+}
+
+export { Contact };
