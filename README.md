@@ -1,5 +1,10 @@
 # Portfolio
 
-A Portfolio to showcase what I have learned. 
+My personal Portfolio.
 
-Created using Vite, React, Sass.
+Built with: 
+- Vite
+- Sass
+- React
+- react-icons
+- react-spinners
