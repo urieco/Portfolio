@@ -8,9 +8,6 @@ function Contact() {
         Please get in touch if you think our work could be mutually beneficial!
       </div>
       <br />
-      <div className="address">
-        Address: <span>411/7 Nguyễn Oanh, Quận Gò Vấp, TPHCM</span>
-      </div>
       <div className="phoneNumber">
         Phone: <span>0909 755 292</span>
       </div>

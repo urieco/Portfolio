@@ -13,7 +13,7 @@ $large_viewport: 1500px;
       rgba(249, 115, 22, 0.2) 100%
     )
     no-repeat;
-  padding: 4em 0 6em;
+  padding: 6em 0 6em;
 }
 
 h1.workWith {
@@ -53,7 +53,8 @@ h1.workWith {
   .developmentStack,
   .devTools,
   .officeTools,
-  .OS {
+  .OS,
+  .mockUp {
     border-bottom: 0.1em solid $secondary_color_1;
   }
 
@@ -68,6 +69,14 @@ h1.workWith {
   .officeTools,
   .OS {
     margin-right: 2em;
+  }
+
+  @media screen and (max-width: $small_viewport) {
+    grid-template-columns: 1fr;
+
+    img {
+      width: 10svw;
+    }
   }
 
   @media screen and (min-width: $large_viewport) {
@@ -111,7 +120,7 @@ h1.workWith {
   grid-template-rows: 20px repeat(auto-fit, 1fr);
   gap: 1em;
   width: 80svw;
-  padding: 0 0 5em 0em;
+  padding: 0 0 6em 0em;
   margin: auto;
 
   a.Project {
@@ -168,7 +177,7 @@ h1.workWith {
   }
 
   @media screen and (max-width: $small_viewport) {
-    grid-template-columns: 75svw;
+    grid-template-columns: 80svw;
     padding-top: 6em;
 
     a.Project,
@@ -178,12 +187,12 @@ h1.workWith {
 
     @keyframes zoom {
       1% {
-        transform: scale(1.2);
+        transform: scale(1.1);
         z-index: 10;
       }
 
       100% {
-        transform: scale(1.2);
+        transform: scale(1.1);
         z-index: 10;
       }
     }
@@ -198,7 +207,7 @@ h1.workWith {
       rgba(249, 115, 22, 0.2) 100%
     )
     no-repeat;
-  padding: 4em 10svw 6em;
+  padding: 6em 10svw;
 
   div {
     font-weight: 700;
@@ -250,53 +259,102 @@ h1.workWith {
 }
 
 // Mobile viewport
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 412px) {
   * {
     padding: 0;
     margin: 0;
   }
 
   .NavBar {
-    transform: translateX(-30px);
+    width: 100svw;
+    position: fixed;
+    top: 0;
+
+    .logo {
+      padding: 0 1.5em;
+    }
 
     b {
-      right: 2.3em;
+      right: 2.9em;
     }
   }
 
   .Introduction {
+    .greeting {
+      width: 85svw;
+    }
+
     .description {
       width: 85svw;
     }
 
-    .downloadCVBtn {
-      transform: translateX(-50px);
+    .downloadCVBtn,
+    .avatarContainer {
+      transform: translateX(-12svw);
     }
   }
 
   .Experience {
-    transform: translateX(-30px);
+    transform: translateX(-10svw);
+
     .experienceBoard {
-      gap: 1em 2em;
+      grid-template-columns: 1fr;
+
+      h3 {
+        text-align: center;
+      }
 
       img {
-        transform: scale(2);
+        transform: scale(1.5);
         margin: 0.75em 2em;
       }
 
       img:hover {
         transform: scale(2.1);
       }
+
+      .officeTools,
+      .OS {
+        margin-right: 0;
+      }
     }
   }
 
   .ProjectsDisplaySection {
     h1 {
-      right: 2.2em;
+      text-align: center;
+      position: relative;
+      right: 8%;
     }
 
     .Project {
-      margin-left: -3em;
+      width: 95svw;
+      position: relative;
+      right: 23%;
     }
   }
+
+  .Contact {
+    font-size: 4.5vw;
+
+    .note,
+    .address,
+    .phoneNumber,
+    .email,
+    .MediaLink {
+      grid-template-columns: 1fr;
+      gap: 0.5em;
+      width: 80svw;
+      margin-bottom: 1em;
+    }
+
+    .MediaLink {
+      position: relative;
+      left: 2%;
+    }
+  }
+}
+
+* {
+  outline: 1px solid red;
 }

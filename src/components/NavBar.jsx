@@ -14,7 +14,7 @@ function NavBar() {
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
-      top: (elementRef.current.offsetTop-30),
+      top: (elementRef.current.offsetTop),
       behavior: "smooth",
     });
   };
