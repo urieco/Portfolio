@@ -28,6 +28,7 @@ h1.workWith {
   color: #000;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 0 6em;
   width: 80svw;
   margin: auto;
 
@@ -80,7 +81,7 @@ h1.workWith {
   }
 
   @media screen and (min-width: $large_viewport) {
-    gap: 1em;
+    gap: 1em 6em;
 
     h3 {
       font-weight: 600;
@@ -138,26 +139,44 @@ h1.workWith {
       justify-items: center;
     }
 
-    .projectTitle {
-      color: #000;
+    .descriptionContainer {
+      color: $color_2;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
-      font-weight: 700;
-      text-align: justify;
-      padding: 0.2em 0 0.5em 0.5em;
-      margin-top: 0.75em;
-      opacity: 0.5;
+      font-weight: 500;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .projectTitle {
+        position: relative;
+        padding: 0.5em 0;
+        border: 0.1em solid $color_2;
+        opacity: 0.5;
+      }
+
+      .projectDescription {
+        text-decoration: none;
+        padding: 0.5em 0;
+        border: 0.1em solid $color_2;
+        opacity: 0.5;
+      }
+
+      .projectTitle:hover,
+      .projectDescription:hover {
+        color: $secondary_color_1;
+        background-color: $color_1;
+        font-weight: 600;
+        opacity: 1;
+        transform: scale(1.1) translateY(-5%);
+        z-index: 5;
+      }
     }
   }
 
   a.Project:hover {
     box-shadow: 0.1em 0.1em 0.75em 0.02em rgba($color_1, 0.4);
     animation: zoom 20s ease-in;
-
-    .projectTitle {
-      color: $color_1;
-      opacity: 1;
-    }
   }
 
   @keyframes zoom {
@@ -259,43 +278,48 @@ h1.workWith {
 }
 
 // Mobile viewport
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 415px) {
   * {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
   }
 
   .NavBar {
-    width: 100svw;
-    position: fixed;
+    position: absolute;
     top: 0;
+    width: 100svw;
 
     .logo {
-      padding: 0 1.5em;
+      padding: 0.4em 0;
+
+      b {
+        top: -8% !important;
+        left: 76% !important;              
+      }
     }
 
-    b {
-      right: 2.9em;
+    .navLinkContainer {
+      position: relative;
+      margin: auto;
     }
   }
 
   .Introduction {
-    .greeting {
-      width: 85svw;
+    width: 100svw;
+
+    h1 {
+      font-size: 2.5rem !important;
     }
 
-    .description {
-      width: 85svw;
-    }
-
-    .downloadCVBtn,
-    .avatarContainer {
-      transform: translateX(-12svw);
+    .downloadCVBtn {
+      margin: 2em 5em 0.5em !important;
+      width: fit-content;
     }
   }
 
   .Experience {
-    transform: translateX(-10svw);
+    width: 100svw;
 
     .experienceBoard {
       grid-template-columns: 1fr;
@@ -321,16 +345,21 @@ h1.workWith {
   }
 
   .ProjectsDisplaySection {
+ 
     h1 {
       text-align: center;
       position: relative;
-      right: 8%;
     }
-
-    .Project {
+    .ProjectsDisplay {
       width: 95svw;
-      position: relative;
-      right: 23%;
+      margin: 0;
+      padding: 2em 0 4em;
+      transform: translateX(2%);
+  
+      .Project {
+        width: 95svw;
+        position: relative;
+      }
     }
   }
 
@@ -355,6 +384,3 @@ h1.workWith {
   }
 }
 
-* {
-  outline: 1px solid red;
-}

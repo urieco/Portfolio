@@ -15,6 +15,7 @@ function ProjectsDisplay() {
           source={WeatherAppPicture}
           link="https://urieco.github.io/weather-app/"
           title="Weather App"
+          linkToGithub="https://github.com/urieco/weather-app"
         />
 
         <Project
@@ -22,12 +23,14 @@ function ProjectsDisplay() {
           link="https://urieco.github.io/cv-builder-react/"
           title="CV Builder"
           cols='secondCols'
+          linkToGithub="https://github.com/urieco/CV-builder-react"
         />
 
         <Project
           source={ToDoListPicture}
           link="https://urieco.github.io/todo-list/"
           title="Todo App"
+          linkToGithub="https://github.com/urieco/todo-list"
         />
 
         <Project
@@ -35,12 +38,14 @@ function ProjectsDisplay() {
           link="https://urieco.github.io/Sign-up-Form/"
           title="Signup Form"
           cols='secondCols'
+          linkToGithub="https://github.com/urieco/Sign-up-Form"
         />
 
         <Project
           source={AdminDashboardPicture}
           link="https://urieco.github.io/Admin-Dashboard/"
           title="Admin Dashboard"
+          linkToGithub="https://github.com/urieco/Admin-Dashboard"
         />
 
         <Project
@@ -48,6 +53,7 @@ function ProjectsDisplay() {
           link="https://urieco.github.io/Basic-Calculator/"
           title="Basic Calculator"
           cols=' secondCols'
+          linkToGithub="https://github.com/urieco/Basic-Calculator"
         />
       </div>
     </>

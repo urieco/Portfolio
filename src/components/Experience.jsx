@@ -5,6 +5,7 @@ import SassLogo from "../assets/sass.svg";
 import JavascriptLogo from "../assets/javascript.svg";
 import PHPLogo from "../assets/php.png";
 import ReactLogo from "../assets/react.svg";
+import MySQLLogo from "../assets/mysql.svg";
 import JestLogo from "../assets/jest.svg";
 import GitLogo from "../assets/git.svg";
 import VirtualBoxLogo from "../assets/virtualbox.svg";
@@ -27,6 +28,7 @@ function Experience() {
     PHPLogo,
     JavascriptLogo,
     ReactLogo,
+    MySQLLogo
   ];
 
   const devTools = [JestLogo, GitLogo, VirtualBoxLogo, WebpackLogo, ViteLogo];
@@ -42,7 +44,7 @@ function Experience() {
       <h1 className="workWith">I have worked with...</h1>
       <div className="experienceBoard">
         <div className="developmentStack">
-          <h3>Development Stack</h3>
+          <h3>Technical Tools</h3>
           {developmentStack.map((logo) => {
             return <img src={logo} />;
           })}

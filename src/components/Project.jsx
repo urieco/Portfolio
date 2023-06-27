@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function Project({ source, link, title, cols=""}) {
+function Project({ source, link, title, cols="", linkToGithub}) {
   return (
     <a 
       href={link} 
@@ -9,13 +9,25 @@ function Project({ source, link, title, cols=""}) {
       className={"Project" + " " + cols}
     >
       <img src={source} />
-      <div className="projectTitle">{title}</div>
+      <div className="descriptionContainer">
+        <div className="projectTitle">{title}</div>
+        <a 
+          href={linkToGithub}
+          target="_blank" 
+          rel="noreferrer" 
+          className="projectDescription"
+          onClick={(e) => e.stopPropagation()}
+        >
+          GitHub Repo
+        </a>
+      </div>
     </a>
   );
 }
 
 Project.propTypes = {
   source: PropTypes.string,
+  linkToGithub: PropTypes.string,
   link: PropTypes.string,
   title: PropTypes.string,
   cols: PropTypes.string,
