@@ -19,7 +19,7 @@ $large_viewport: 1500px;
 h1.workWith {
   font-weight: 600;
   letter-spacing: -0.1rem;
-  width: 80svw;
+  width: 78svw;
   padding-bottom: 0.6em;
   margin: auto;
 }
@@ -29,7 +29,7 @@ h1.workWith {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 6em;
-  width: 80svw;
+  width: 78svw;
   margin: auto;
 
   h3 {
@@ -117,7 +117,7 @@ h1.workWith {
 .ProjectsDisplay {
   color: #000;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35svw, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30svw, 1fr));
   grid-template-rows: 20px repeat(auto-fit, 1fr);
   gap: 1em;
   width: 80svw;
@@ -168,7 +168,7 @@ h1.workWith {
         background-color: $color_1;
         font-weight: 600;
         opacity: 1;
-        transform: scale(1.1) translateY(-5%);
+        transform: scale(1.1) translateY(-2%);
         z-index: 5;
       }
     }
@@ -176,7 +176,7 @@ h1.workWith {
 
   a.Project:hover {
     box-shadow: 0.1em 0.1em 0.75em 0.02em rgba($color_1, 0.4);
-    animation: zoom 20s ease-in;
+    animation: zoom 20s ease-in-out;
   }
 
   @keyframes zoom {
@@ -274,6 +274,16 @@ h1.workWith {
 
   @media screen and (min-width: $large_viewport) {
     font-size: 1vw;
+  }
+}
+
+// Large viewport
+@media screen and (min-width: $large_viewport) {
+  .experienceBoard {
+
+    img {
+      width: 4svw;
+    }
   }
 }
 
