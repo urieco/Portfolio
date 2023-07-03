@@ -2,6 +2,7 @@
 import HTMLLogo from "../assets/html.svg";
 import CSSLogo from "../assets/css.svg";
 import SassLogo from "../assets/sass.svg";
+import TailwindCSSLogo from "../assets/tailwind-css.svg";
 import JavascriptLogo from "../assets/javascript.svg";
 import PHPLogo from "../assets/php.png";
 import ReactLogo from "../assets/react.svg";
@@ -11,6 +12,8 @@ import GitLogo from "../assets/git.svg";
 import VirtualBoxLogo from "../assets/virtualbox.svg";
 import WebpackLogo from "../assets/webpack.svg";
 import ViteLogo from "../assets/vite.svg";
+import WordpressLogo from "../assets/wordpress.svg";
+import ReduxLogo from "../assets/redux.svg";
 import PhotoshopLogo from "../assets/photoshop.svg";
 import DavinciResolveLogo from "../assets/davinci-resolve.svg";
 import WordLogo from "../assets/microsoft-word.svg";
@@ -25,13 +28,22 @@ function Experience() {
     HTMLLogo,
     CSSLogo,
     SassLogo,
+    TailwindCSSLogo,
     PHPLogo,
     JavascriptLogo,
     ReactLogo,
-    MySQLLogo
+    MySQLLogo,
   ];
 
-  const devTools = [JestLogo, GitLogo, VirtualBoxLogo, WebpackLogo, ViteLogo];
+  const devTools = [
+    JestLogo,
+    GitLogo,
+    VirtualBoxLogo,
+    WordpressLogo,
+    WebpackLogo,
+    ViteLogo,
+    ReduxLogo,
+  ];
 
   const mockUp = [PhotoshopLogo, DavinciResolveLogo];
 
