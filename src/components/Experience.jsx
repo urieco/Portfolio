@@ -13,6 +13,7 @@ import VirtualBoxLogo from "../assets/virtualbox.svg";
 import WebpackLogo from "../assets/webpack.svg";
 import ViteLogo from "../assets/vite.svg";
 import WordpressLogo from "../assets/wordpress.svg";
+import FirebaseLogo from "../assets/firebase.svg"
 import ReduxLogo from "../assets/redux.svg";
 import PhotoshopLogo from "../assets/photoshop.svg";
 import DavinciResolveLogo from "../assets/davinci-resolve.svg";
@@ -40,6 +41,7 @@ function Experience() {
     GitLogo,
     VirtualBoxLogo,
     WordpressLogo,
+    FirebaseLogo,
     WebpackLogo,
     ViteLogo,
     ReduxLogo,
