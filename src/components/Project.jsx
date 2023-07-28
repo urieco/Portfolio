@@ -18,7 +18,7 @@ function Project({ source, link, title, cols="", linkToGithub}) {
           className="projectDescription"
           onClick={(e) => e.stopPropagation()}
         >
-          GitHub Repo
+          GitHub Repository
         </a>
       </div>
     </a>

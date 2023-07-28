@@ -5,6 +5,14 @@ $secondary_color_1: #169cf9;
 $small_viewport: 600px;
 $large_viewport: 1500px;
 
+@media only screen and (max-width: $small_viewport) {
+  * {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
+
 .App {
   width: 100svw;
   min-width: 500px;
@@ -28,6 +36,12 @@ $large_viewport: 1500px;
   position: fixed;
   top: 50%;
   left: 45%;
+  overflow: hidden;
+
+  @media screen and (max-width: $small_viewport) {
+    top: 44%;
+    left: 38%;
+  }
 }
 
 button:active {
@@ -35,7 +49,7 @@ button:active {
 }
 
 .toTopBtn {
-  color: #fff;
+  color: whitesmoke;
   background-color: $color_2;
   position: fixed;
   bottom: 15px;
@@ -44,264 +58,6 @@ button:active {
   width: 40px;
   border-radius: 50%;
   border: 2px solid $color_2;
-  z-index: 11;
+  z-index: 20;
   cursor: pointer;
-}
-
-.NavBar {
-  color: #fff;
-  background-color: $color_2;
-  position: sticky;
-  top: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 0.75em;
-  z-index: 10;
-
-  .logo {
-    letter-spacing: 0.2em;
-    padding-left: 0.75em;
-    cursor: pointer;
-
-    b {
-      color: $color_1;
-      font-size: 3rem;
-      position: absolute;
-      top: -0.15em;
-      left: 4.1em;
-    }
-  }
-
-  .navLinkContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .NavLink {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 600;
-      vertical-align: center;
-      margin: 0.5em;
-      cursor: pointer;
-
-      @media screen and (min-width: $large_viewport) {
-        font-size: 1.5svw;
-      }
-    }
-
-    .NavLink:hover {
-      color: $color_1;
-      transform: scale(1.1);
-    }
-
-    .NavLink:active {
-      text-decoration: underline;
-      text-underline-position: under;
-      color: $color_1;
-    }
-  }
-
-  .MediaLink {
-    display: flex;
-    justify-content: end;
-    padding-top: 0.4em;
-    margin-right: 1em;
-
-    a {
-      margin-left: 0.75em;
-
-      img {
-        width: 3svw;
-      }
-
-      img:hover {
-        color: $color_1;
-        transform: scale(1.1);
-      }
-    }
-  }
-
-  @media screen and (max-width: $small_viewport) {
-    grid-template-columns: 1fr;
-    gap: 1em;
-
-    .logo {
-      text-align: center;
-      position: relative;
-
-      b {
-        top: -55%;
-        left: 66%;
-      }
-    }
-
-    .MediaLink {
-      grid-row: 2;
-      justify-content: center;
-      gap: 2em;
-
-      a > img {
-        width: 50px;
-      }
-    }
-  }
-}
-
-.Introduction {
-  color: #fff;
-  background-color: $color_2;
-  display: flex;
-  justify-content: space-around;
-  padding: 0.75 0;
-
-  .aboutMe {
-    padding: 10% 2em;
-    
-    .greeting,
-    h1,
-    .description {
-      padding: 0 0.5em;
-      border-left: 5px solid #fff;
-    }
-
-
-    .greeting {
-      font-weight: 300;
-    }
-
-    h1 {
-      font-size: 3rem;
-      display: inline-flex;
-      padding: 0.4em 0.15em;
-
-      li {
-        list-style-type: none;
-        color: $color_3;
-        position: relative;
-        z-index: 1;
-        
-        span {
-          position: relative;
-          margin-left: 0.25em;
-        }
-
-        span::after {
-          content: "";
-          position: absolute;
-          height: 100%;
-          background-color: transparent;
-          border-left: 2px solid $color_3;
-          margin-left: 0.2em;
-          animation: typing 0.6s cubic-bezier(1,.01,1,0) infinite;
-        }
-
-        @keyframes typing {
-          50% {
-            opacity: 0;
-          }
-        }
-      }
-    }
-
-    .description {
-      font-size: 1.2rem;
-      text-align: justify;
-    }
-
-    .downloadCVBtn {
-      color: #fff;
-      background-color: transparent;
-      font-size: 1rem;
-      font-weight: 600;
-      padding: 0.2em 0.5em;
-      border: 0.01em solid #fff;
-      border-radius: 4%;
-      margin-top: 1em;
-      margin-left: 0.6em;
-      box-shadow: 0.1em 0.1em rgba(255, 255, 255, 0.4);
-    }
-
-    .downloadCVBtn:hover {
-      background-color: rgba($color_1,0.9);
-    }
-
-    .downloadCVBtn:active {
-      box-shadow: none;
-    }
-  }
-
-  .avatarContainer {
-    
-    img {
-      width: 25svw;
-      padding: 2em 1em;
-      object-fit: cover;
-      animation: animateAvatar 4s linear infinite;
-    }
-
-    @keyframes animateAvatar {
-      50% {
-        transform: translate(12px, 6px);
-      }
-    }
-  }
-
-  @media screen and (max-width: $small_viewport) {
-    flex-direction: column;
-
-    .aboutMe {
-      display: flex;
-      flex-direction: column;
-
-      .greeting,
-      h1,
-      .description {
-        border: none;
-      }
-
-      .greeting {
-        border-top: 5px solid #fff;
-        padding-top: 0.75em;
-      }
-
-      .downloadCVBtn {
-        margin: 2em 8em;
-      }
-    }
-
-    .avatarContainer {
-      justify-content: center;
-
-      img {
-        width: 75%;
-      }
-
-    }
-  }
-}
-
-@media screen and (min-width: $large_viewport) {
-  .NavBar {
-    padding: 0 10vw;
-  }
-
-  .Introduction {
-    padding: 0 10vw;
-
-    .avatarContainer {
-      width: 30svw;
-    }
-
-    .aboutMe .downloadCVBtn {
-      font-size: 1.3rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 412px) {
-  .LoadingScreen {
-    top: 45%;
-    left: 38%;
-  }
 }

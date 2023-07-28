@@ -20,7 +20,7 @@ function NavBar() {
   };
 
   return (
-    <>
+    <header>
       <ScrollToTop />
       <div className="NavBar">
         <h2 className="logo">
@@ -60,7 +60,7 @@ function NavBar() {
       <div ref={contact} className="Contact">
         <Contact />
       </div>
-    </>
+    </header>
   );
 }
 

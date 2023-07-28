@@ -9,7 +9,7 @@ import ECommerceWebsitePicture from "../images/e-commerce-website.png";
 
 function ProjectsDisplay() {
   return (
-    <>
+    <section>
       <h1>MY PROJECTS</h1>
       <div className="ProjectsDisplay">
         <Project
@@ -57,7 +57,7 @@ function ProjectsDisplay() {
           linkToGithub="https://github.com/urieco/Basic-Calculator"
         />
       </div>
-    </>
+    </section>
   );
 }
 

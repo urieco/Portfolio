@@ -1,5 +1,5 @@
-import GithubLogo from "../assets/github.svg";
-import FacebookLogo from "../assets/facebook.svg";
+import GithubLogo from "/assets/github.svg";
+import FacebookLogo from "/assets/facebook.svg";
 
 function MediaLink() {
   return (

@@ -2,8 +2,8 @@ import { MediaLink } from "./MediaLink";
 
 function Contact() {
   return (
-    <>
-      <h1>Contact me</h1>
+    <footer>
+      <h1>Contact Me</h1>
       <div className="note">
         Please get in touch if you think our work could be mutually beneficial!
       </div>
@@ -15,7 +15,7 @@ function Contact() {
         Email: <span>huy.dodang27@gmail.com</span>
       </div>
       <MediaLink />
-    </>
+    </footer>
   );
 }
 
