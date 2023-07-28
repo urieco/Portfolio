@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import Resume from "../documents/Resume - EN (Đỗ Đăng Huy).pdf";
-import Avatar from "../images/avatar.png";
+import Resume from "/documents/Resume - EN (Đỗ Đăng Huy).pdf";
+import Avatar from "/images/avatar.png";
 
 function Introduction() {
   return (

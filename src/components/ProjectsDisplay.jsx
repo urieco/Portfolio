@@ -1,11 +1,11 @@
 import { Project } from "./Project";
-import WeatherAppPicture from "../images/weather-app.png";
-import CVBuilderReactAppPicture from "../images/cv-builder-react.png";
-// import ToDoListPicture from "../images/to-do-list.png";
-import SignUpFormPicture from "../images/signup-form.png";
-import AdminDashboardPicture from "../images/admin-dashboard.png";
-import BasicCalculatorPicture from "../images/basic-calculator.png";
-import ECommerceWebsitePicture from "../images/e-commerce-website.png";
+import WeatherAppPicture from "/images/weather-app.png";
+import CVBuilderReactAppPicture from "/images/cv-builder-react.png";
+// import ToDoListPicture from "/images/to-do-list.png";
+import SignUpFormPicture from "/images/signup-form.png";
+import AdminDashboardPicture from "/images/admin-dashboard.png";
+import BasicCalculatorPicture from "/images/basic-calculator.png";
+import ECommerceWebsitePicture from "/images/e-commerce-website.png";
 
 function ProjectsDisplay() {
   return (
