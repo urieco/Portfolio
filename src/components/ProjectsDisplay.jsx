@@ -10,7 +10,7 @@ import ECommerceWebsitePicture from "/images/e-commerce-website.png";
 function ProjectsDisplay() {
   return (
     <section>
-      <h1>MY PROJECTS</h1>
+      <div className="ProjectSectionTitle">MY PROJECTS</div>
       <div className="ProjectsDisplay">
         <Project
           source={WeatherAppPicture}
