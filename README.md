@@ -3,7 +3,7 @@
 My personal Portfolio.
 
 Features: 
-- Support Mobile Viewing
+- Responsive Design
 
 Built with: 
 - Vite
