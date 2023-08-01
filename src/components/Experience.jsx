@@ -23,7 +23,7 @@ import ExcelLogo from "/assets/microsoft-excel.svg";
 import PowerpointLogo from "/assets/microsoft-powerpoint.svg";
 import WindowsLogo from "/assets/windows.svg";
 import UbuntuLogo from "/assets/ubuntu.svg";
-import ManjaroLogo from "/assets/manjaro.svg";
+import ManjaroLogo from "/assets/manjaro.png";
 
 function Experience() {
   const developmentStack = [
