@@ -16,7 +16,6 @@ import WebpackLogo from "/assets/webpack.svg";
 import ViteLogo from "/assets/vite.svg";
 import WordpressLogo from "/assets/wordpress.svg";
 import FirebaseLogo from "/assets/firebase.svg";
-import ReduxLogo from "/assets/redux.svg";
 import PhotoshopLogo from "/assets/photoshop.svg";
 import DavinciResolveLogo from "/assets/davinci-resolve.svg";
 import WordLogo from "/assets/microsoft-word.svg";
@@ -48,7 +47,6 @@ function Experience() {
     FirebaseLogo,
     WebpackLogo,
     ViteLogo,
-    ReduxLogo,
   ];
 
   const mockUp = [PhotoshopLogo, DavinciResolveLogo];
