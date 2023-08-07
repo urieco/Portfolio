@@ -7,6 +7,7 @@ import JavascriptLogo from "/assets/javascript.svg";
 import TypescriptLogo from "/assets/typescript.svg";
 import PHPLogo from "/assets/php.png";
 import ReactLogo from "/assets/react.svg";
+import NextJSLogo from "/assets/nextjs.svg"
 import BootstrapLogo from "/assets/bootstrap.svg";
 import MySQLLogo from "/assets/mysql.svg";
 import JestLogo from "/assets/jest.svg";
@@ -16,6 +17,7 @@ import WebpackLogo from "/assets/webpack.svg";
 import ViteLogo from "/assets/vite.svg";
 import WordpressLogo from "/assets/wordpress.svg";
 import FirebaseLogo from "/assets/firebase.svg";
+import FigmaLogo from "/assets/figma.svg"
 import PhotoshopLogo from "/assets/photoshop.svg";
 import DavinciResolveLogo from "/assets/davinci-resolve.svg";
 import WordLogo from "/assets/microsoft-word.svg";
@@ -35,6 +37,7 @@ function Experience() {
     JavascriptLogo,
     TypescriptLogo,
     ReactLogo,
+    NextJSLogo,
     BootstrapLogo,
     MySQLLogo,
   ];
@@ -49,7 +52,7 @@ function Experience() {
     ViteLogo,
   ];
 
-  const mockUp = [PhotoshopLogo, DavinciResolveLogo];
+  const mockUp = [FigmaLogo, PhotoshopLogo, DavinciResolveLogo];
 
   const officeTools = [WordLogo, ExcelLogo, PowerpointLogo];
 

@@ -1,7 +1,6 @@
 import { Project } from "./Project";
 import WeatherAppPicture from "/images/weather-app.png";
 import CVBuilderReactAppPicture from "/images/cv-builder-react.png";
-// import ToDoListPicture from "/images/to-do-list.png";
 import SignUpFormPicture from "/images/signup-form.png";
 import AdminDashboardPicture from "/images/admin-dashboard.png";
 import BasicCalculatorPicture from "/images/basic-calculator.png";
@@ -13,9 +12,16 @@ function ProjectsDisplay() {
       <div className="ProjectSectionTitle">MY PROJECTS</div>
       <div className="ProjectsDisplay">
         <Project
+          source={ECommerceWebsitePicture}
+          link="https://microware-site.web.app/"
+          title="E-Commerce Website"
+          linkToGithub="https://github.com/urieco/e-commerce-site"
+        />
+        <Project
           source={WeatherAppPicture}
           link="https://urieco.github.io/weather-app/"
           title="Weather App"
+          cols="secondCols"
           linkToGithub="https://github.com/urieco/weather-app"
         />
 
@@ -23,22 +29,14 @@ function ProjectsDisplay() {
           source={CVBuilderReactAppPicture}
           link="https://urieco.github.io/cv-builder-react/"
           title="CV Builder"
-          cols='secondCols'
           linkToGithub="https://github.com/urieco/CV-builder-react"
-        />
-
-        <Project
-          source={ECommerceWebsitePicture}
-          link="https://microware-site.web.app/"
-          title="E-Commerce Website"
-          linkToGithub="https://github.com/urieco/e-commerce-site"
         />
 
         <Project
           source={SignUpFormPicture}
           link="https://urieco.github.io/Sign-up-Form/"
           title="Signup Form"
-          cols='secondCols'
+          cols="secondCols"
           linkToGithub="https://github.com/urieco/Sign-up-Form"
         />
 
@@ -53,7 +51,7 @@ function ProjectsDisplay() {
           source={BasicCalculatorPicture}
           link="https://urieco.github.io/Basic-Calculator/"
           title="Basic Calculator"
-          cols=' secondCols'
+          cols=" secondCols"
           linkToGithub="https://github.com/urieco/Basic-Calculator"
         />
       </div>
