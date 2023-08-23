@@ -19,6 +19,7 @@ import WordpressLogo from "/assets/wordpress.svg";
 import FirebaseLogo from "/assets/firebase.svg";
 import FigmaLogo from "/assets/figma.svg"
 import PhotoshopLogo from "/assets/photoshop.svg";
+import AdobeXDLogo from "/assets/adobe-xd.svg";
 import DavinciResolveLogo from "/assets/davinci-resolve.svg";
 import WordLogo from "/assets/microsoft-word.svg";
 import ExcelLogo from "/assets/microsoft-excel.svg";
@@ -52,7 +53,7 @@ function Experience() {
     ViteLogo,
   ];
 
-  const mockUp = [FigmaLogo, PhotoshopLogo, DavinciResolveLogo];
+  const mockUp = [FigmaLogo, PhotoshopLogo, AdobeXDLogo, DavinciResolveLogo];
 
   const officeTools = [WordLogo, ExcelLogo, PowerpointLogo];
 
